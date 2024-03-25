@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Game cờ tướng</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="css/chess.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="chessBox" class="chess_box">
+	<canvas id="chess"></canvas>
+	<audio src="audio/click.wav" id="clickAudio" preload="auto"></audio>
+	<audio src="audio/select.wav" id="selectAudio" preload="auto"></audio>
+	<div class="bn_box" id="bnBox">
+		<input type="button" name="restartBtn" id="restartBtn" value=" Trò chơi mới " />
+		<input type="button" name="gohomeBtn" id="gohomeBtn" value=" Về màn hình chính " />
+		<input type="button" name="regretBtn" id="regretBtn" value=" Nước đi trước đó " />
+	</div>
+	<div id="moveInfo" class="move_info"> </div>
+</div>
+<div class="menu_box" id="menuBox">
+	<div class="menu_init" id="indexBox"><a id="computervsHuman">Người với Máy</a> <a id="humanvshuman" >Người với Người</a> </div>
+	<div class="menu_computer" id="menuPC">
+		<div class="menu_info">
+			<div class="menu_theme" id="menuQuit"></div>
+			Chọn cấp độ chơi ?
+			<br>
+			<label>
+				<input name="dosau" type="radio" value="1" >
+				Cấp độ tập chơi</label>
+			<br />
+			<label>
+				<input name="dosau" type="radio" value="2" >
+				Cấp độ dễ</label>
+			<br />
+			<label>
+				<input name="dosau" type="radio" value="3" >
+				Cấp độ trung bình</label>
+			<br />
+			<label>
+				<input name="dosau" type="radio" value="4" checked>
+				Cấp độ khó</label>
+			<br />
+			<label>
+				<input name="dosau" type="radio" value="5">
+				Cấp độ siêu khó</label>
+		</div>
+		<a id="playBtn">Bắt đầu chơi</a>
+	</div>
+</div>
+<script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript" src="js/play.js"></script>
+<script type="text/javascript" src="js/AI.js"></script>
+<script type="text/javascript" src="js/gambit.js"></script>
+</body>
+</html>
