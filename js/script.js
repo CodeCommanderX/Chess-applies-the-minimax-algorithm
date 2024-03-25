@@ -46,7 +46,7 @@ function removeBlueColor(){
 // creating a piece
 function createPiece(name, color, row, column) {
     const img = document.createElement('img')
-    img.setAttribute('src', `img/stype/${encodeURI(color)}_${name}.svg`)  //link the image
+    img.setAttribute('src', `img/stype/${encodeURIComponent(color)}_${name}.svg`)  //link the image
     img.dataset.piece = name;
     img.dataset.color = color;
     img.dataset.row = row;
